@@ -4,7 +4,7 @@
 }
 
 .login-container {
-    background: url("../assets/bg.svg");
+    background: url(https://www.g20.in/en/calendar/calender-bg.png) left top no-repeat, url(https://www.g20.in/en/calendar/calender-bg2.png) right bottom no-repeat;
     height: 90vh;
     display: flex;
 }
