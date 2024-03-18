@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -100,4 +105,13 @@
     border: none;
     transition: all 0.3s ease;
     outline: 0;
+    cursor: pointer;
+}
+
+.login_btn:hover {
+    box-shadow: 0 2px 6px -1px rgba(182, 157, 230, 0.65);
+}
+
+.login_btn:hover:active {
+    transform: scale(0.99);
 }

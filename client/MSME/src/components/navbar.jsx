@@ -9,10 +9,12 @@ export default function Navbar() {
         <>
             <div className={styles.header}>
                 <div className={styles.header_main}>
-                    <div className={styles.govttitle}>
-                        <h3>भारत सरकार</h3>
-                        <h1>GOVERNMENT OF INDIA</h1>
-                    </div>
+                    <a href="https://india.gov.in/hi/" target="_blank">
+                        <div className={styles.govttitle}>
+                            <h3>भारत सरकार</h3>
+                            <h1>GOVERNMENT OF INDIA</h1>
+                        </div>
+                    </a>
                     <div className={styles.ministrytitle}>
                         <h3>सूक्ष्म , लघु और मध्यम उद्यम मंत्रालय </h3>
                         <h2>
@@ -21,9 +23,15 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className={styles.images}>
-                    <img src={g20} alt="" />
-                    <img src={azadi} alt="" />
-                    <img src={swachh} alt="" />
+                    <a href="https://www.g20.in/en/" target="_blank">
+                        <img src={g20} alt="" />
+                    </a>
+                    <a href="https://merimaatimeradesh.gov.in/" target="_blank">
+                        <img src={azadi} alt="" />
+                    </a>
+                    <a href="https://www.mygov.in/" target="_blank">
+                        <img src={swachh} alt="" />
+                    </a>
                 </div>
             </div>
             <div className={styles.ministry}>
