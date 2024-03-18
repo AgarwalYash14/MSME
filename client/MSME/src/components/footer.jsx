@@ -71,8 +71,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className={styles.content_right}>
-                        Visitors (From 1st December 2022): 15091931 March 18,
-                        2024 19:33 hrs
+                        Visitors (From 1st December 2022): 15091931 | March 18, 2024 | 19:33 hrs
                     </div>
                 </div>
             </div>
