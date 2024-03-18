@@ -1,0 +1,6 @@
+.header {
+    display: flex;
+    color: rgb(27, 27, 27);
+    outline: none !important;
+    font-size: 5px;
+  }
