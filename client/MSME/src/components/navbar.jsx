@@ -44,6 +44,7 @@ export default function Navbar() {
                 </div>
 
                 <button
+                    className={styles.login_btn}
                     onClick={() => {
                         navigate("/login");
                     }}

@@ -7,12 +7,8 @@ export default function Login() {
                 <div className="left"></div>
                 <form action className="log-in" autoComplete="off">
                     <h4>
-                        Login to your <span>Account</span>
+                        LOGIN TO YOUR <span>ACCOUNT</span>
                     </h4>
-                    {/* <p>
-                        Welcome back! Log in to your account to view today's
-                        clients:
-                    </p> */}
                     <div className="floating-label">
                         <input
                             placeholder="Email"

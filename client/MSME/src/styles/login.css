@@ -112,7 +112,7 @@
 }
 .login-container .floating-label label {
     position: absolute;
-    top: calc(50% - 7px);
+    top: calc(50% - 15px);
     left: 0;
     opacity: 0;
     transition: all 0.3s ease;
