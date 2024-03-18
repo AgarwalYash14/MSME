@@ -84,7 +84,7 @@ export default function Login() {
                         </div>
                     </div>
                     <button type="submit" onclick="return false;">
-                        Log in
+                        Login
                     </button>
                 </form>
             </div>
