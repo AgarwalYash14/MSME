@@ -8,7 +8,37 @@
     background: url(https://www.mygov.in/sites/all/themes/mygov/images/paralex-bg.png)
         right 0 no-repeat;
 }
-
+.about_section {
+    padding: 55px 0 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+.about_section h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.714em;
+    background: linear-gradient(
+        92.61deg, 
+        #9ac461 0%,
+        #548bc5 0%,
+        #59b59a 116.86%,
+        #b45d97 182.36%,
+        #dc763b 246.57%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+}
+.about_section h2{
+    color: #6c6c6c;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 30px;
+}
 .key_features {
     padding: 55px 0 40px;
     width: 80%;
@@ -18,8 +48,8 @@
     margin-bottom: 15px;
 }
 .key_heading h1 {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     font-family: "Montserrat", sans-serif;
     font-size: 1.714em;
     background: linear-gradient(
@@ -38,9 +68,6 @@
     margin-bottom: 25px;
 }
 .benefits_heading h1{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
     font-family: "Montserrat", sans-serif;
     font-size: 1.714em;
     background: linear-gradient(
@@ -90,14 +117,15 @@
 }
 
 .benefits{
-    padding-bottom: 55px;
+    padding: 55px 0 40px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .benefits_icons {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
-    width: 80%;
     background: #fff;
 }
 
@@ -108,6 +136,8 @@
     justify-content: center;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    width: 16%;
+    border-radius: 5px;
 }
 
 .b1 h3 {
