@@ -10,13 +10,14 @@
     align-items: center;
     justify-items: center;
     margin: 0 auto;
+    height: 100%;
 }
 
 .create_catalog .button h1 {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-size: 1.714em;
-    display: inline-block;
+    display: flex;
     background: linear-gradient(
         92.61deg,
         #9ac461 0%,
@@ -28,4 +29,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }

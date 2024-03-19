@@ -6,6 +6,7 @@ export default function CreateCatalog() {
         <>
             <div className="create_catalog">
                 <div className="button">
+                    {/* <input type="file" name="" id="" /> */}
                     <h1>Create Catalog</h1>
                 </div>
             </div>
