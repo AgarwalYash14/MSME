@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/createcatalog.css";
 import styles from "../styles/addProduct.module.css";
+import { ref } from "firebase/storage";
+import { storage } from "../config/firebase";
 
 export default function CreateCatalog() {
     const navigate = useNavigate();
@@ -21,6 +23,12 @@ export default function CreateCatalog() {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission logic here
+    };
+
+    const [img, setImg] = useState("");
+
+    const handleClick = () => {
+        ref(storage, `files/`);
     };
 
     const handleImageChange = (e) => {
@@ -149,6 +157,7 @@ export default function CreateCatalog() {
                                     <button
                                         type="submit"
                                         className={styles.uploadButton}
+                                        onClick={handleClick}
                                     >
                                         Add Product
                                     </button>
