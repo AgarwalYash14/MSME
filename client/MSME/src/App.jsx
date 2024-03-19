@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 import Home from "./components/home";
+=======
+import Home from "./pages/homepage";
+>>>>>>> Stashed changes
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/login";
