@@ -115,3 +115,16 @@ a {
 .login_btn:hover:active {
     transform: scale(0.99);
 }
+
+.flag_border {
+    background-image: linear-gradient(
+        90deg,
+        #f09e4b,
+        #e1dcd7,
+        #e0e0e0,
+        #d3dad2,
+        #298921
+    );
+    border-top: 5px transparent;
+    height: 5px;
+}

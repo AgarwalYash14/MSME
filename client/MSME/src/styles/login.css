@@ -1,12 +1,24 @@
+button {
+    cursor: pointer;
+}
+
 .login-container * {
     font-weight: 300;
     margin: 0;
 }
 
 .login-container {
-    background: url(https://www.g20.in/en/calendar/calender-bg.png) left top no-repeat, url(https://www.g20.in/en/calendar/calender-bg2.png) right bottom no-repeat;
+    background: url(https://www.g20.in/en/calendar/calender-bg.png) left top
+            no-repeat,
+        url(https://www.g20.in/en/calendar/calender-bg2.png) right bottom
+            no-repeat;
     height: 90vh;
     display: flex;
+}
+
+.login-container .name-svg svg {
+    height: 25px;
+    width: 25px;
 }
 
 .login-container h4 {
@@ -31,7 +43,7 @@
     border-radius: 15px;
 }
 .login-container form h4 {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     color: rgba(0, 0, 0, 0.5);
 }
 .login-container form h4 span {
@@ -131,6 +143,11 @@
     width: 44px;
     display: flex;
 }
+
+.login-container .floating-label .name-svg {
+    height: 23px !important ;
+    width: 23px !important;
+}
 .login-container .floating-label .icon svg {
     height: 30px;
     width: 30px;
@@ -163,7 +180,7 @@
     + .icon
     svg
     path {
-    fill: #b69de6;
+    fill: #f78b15;
 }
 .login-container .floating-label input:not(:valid):not(:focus) + label + .icon {
     animation-name: shake-shake;
@@ -210,4 +227,18 @@
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     border-radius: 15px;
+}
+
+.new-account {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.new-account h5 {
+    font-size: 16px;
+    color: #f78b15 !important;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
 }

@@ -60,6 +60,7 @@ export default function Navbar() {
                     Login
                 </button>
             </div>
+            <div className={styles.flag_border}></div>
         </>
     );
 }

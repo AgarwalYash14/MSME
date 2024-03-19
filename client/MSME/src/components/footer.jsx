@@ -13,7 +13,10 @@ export default function Footer() {
                 </div>
                 <div className={styles.footer_row}>
                     <div className={styles.footer_img}>
-                        <img src="https://www.g20.in/en/images/home/g20-logo.png" alt="" />
+                        <img
+                            src="https://www.g20.in/en/images/home/g20-logo.png"
+                            alt=""
+                        />
                     </div>
                     <div className={styles.footer_col_1}>
                         <h3>About G20</h3>
@@ -54,7 +57,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className={styles.copy_end}>
-                        ©2023 . All Rights Reserved.
+                        ©2024 . All Rights Reserved.
                     </div>
                 </div>
                 <hr />
@@ -64,6 +67,7 @@ export default function Footer() {
                             © Content owned by eG&IT, Ministry of External
                             Affairs, Government of India.
                         </div>
+<<<<<<< Updated upstream
                         <div className={styles.content_left_row_2}>
                             Site designed and developed by <a href="">Tata Consultancy</a>
                             Services Ltd. and Maintained by eG&IT division,
@@ -72,6 +76,8 @@ export default function Footer() {
                     </div>
                     <div className={styles.content_right}>
                         Visitors (From 1st December 2022): 15091931 | March 18, 2024 | 19:33 hrs
+=======
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
