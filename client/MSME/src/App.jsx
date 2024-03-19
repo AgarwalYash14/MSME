@@ -1,10 +1,6 @@
-<<<<<<< Updated upstream
-import Home from "./components/home";
-=======
-import Home from "./pages/homepage";
->>>>>>> Stashed changes
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/home";
 import Login from "./components/login";
 import MainLayout from "./Layout/mainLayout";
 import Signup from "./components/signup";
@@ -15,7 +11,7 @@ export default function App() {
         <BrowserRouter>
             <Routes>
                 <Route element={<MainLayout />} path="/">
-                    <Route element={<Home />} />
+                    <Route index element={<Home />} />
                     <Route element={<Login />} path="login" />
                     <Route element={<Signup />} path="signup" />
                     <Route element={<ProductData />} path="catalogue" />
