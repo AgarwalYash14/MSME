@@ -1,3 +1,64 @@
-.xyz{
-    color: red;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.key_features {
+    background: url(https://www.mygov.in/sites/all/themes/mygov/images/paralex-bg.png)
+        right 0 no-repeat;
+    padding: 55px 0 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+.key_heading {
+    margin-bottom: 15px;
+}
+.key_heading h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.714em;
+    display: inline-block;
+    background: linear-gradient(
+        92.61deg,
+        #9ac461 0%,
+        #548bc5 0%,
+        #59b59a 116.86%,
+        #b45d97 182.36%,
+        #dc763b 246.57%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.key_heading h2 {
+    color: #3e4f5a;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+}
+.tab_icons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60%;
+}
+.tab_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 18%;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 5px; 
+}
+.tab_link img {
+    width: 50px;
+    aspect-ratio: 3 / 2;
+    padding: 25px 0;
+}
+
+.tab_link h1{
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.786em;
+    color: #6c6c6c;
+    letter-spacing: 1px;
 }
