@@ -67,17 +67,6 @@ export default function Footer() {
                             © Content owned by eG&IT, Ministry of External
                             Affairs, Government of India.
                         </div>
-<<<<<<< Updated upstream
-                        <div className={styles.content_left_row_2}>
-                            Site designed and developed by <a href="">Tata Consultancy</a>
-                            Services Ltd. and Maintained by eG&IT division,
-                            Ministry of External Affairs.
-                        </div>
-                    </div>
-                    <div className={styles.content_right}>
-                        Visitors (From 1st December 2022): 15091931 | March 18, 2024 | 19:33 hrs
-=======
->>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
