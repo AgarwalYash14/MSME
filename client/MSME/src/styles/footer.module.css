@@ -30,11 +30,16 @@
     list-style: none;
 }
 .footer_img {
+    display: flex;
+    align-items: center;
     padding-right: 15px;
 }
 .footer_img img {
-    max-width: 130px;
-    padding-left: 10px;
+    max-width: 45px;
+    padding-right: 10px;
+}
+.footer_img h1, .footer_img h2, .footer_img h3{
+    font-size: 0.813rem;
 }
 .footer_col_1,
 .footer_col_2,

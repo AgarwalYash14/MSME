@@ -1,4 +1,6 @@
 import styles from "../styles/footer.module.css";
+import { emblem } from "../assets/";
+
 
 export default function Footer() {
     return (
@@ -13,10 +15,14 @@ export default function Footer() {
                 </div>
                 <div className={styles.footer_row}>
                     <div className={styles.footer_img}>
-                        <img
-                            src="https://www.g20.in/en/images/home/g20-logo.png"
-                            alt=""
-                        />
+                        <div>
+                            <img src={emblem} alt="" />
+                        </div>
+                        <div>
+                            <h1>सूक्ष्म , लघु और मध्यम उद्यम मंत्रालय</h1>
+                            <h2>Ministry of</h2>
+                            <h3>Micro, small & Medium Enterprises</h3>
+                        </div>
                     </div>
                     <div className={styles.footer_col_1}>
                         <h3>About G20</h3>
