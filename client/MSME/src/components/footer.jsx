@@ -25,29 +25,29 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className={styles.footer_col_1}>
-                        <h3>About G20</h3>
+                        <h3>About MSME</h3>
                         <ul>
                             <li>Overview</li>
-                            <li>G20 Members</li>
-                            <li>How G20 works</li>
+                            <li>MSME Members</li>
+                            <li>How MSME works</li>
                             <li>Previous Summits</li>
                         </ul>
                     </div>
                     <div className={styles.footer_col_2}>
-                        <h3>G20 India 2023</h3>
+                        <h3>MSME 2024</h3>
                         <ul>
                             <li>Logo & Theme</li>
-                            <li>G20 Summit, New Delhi</li>
-                            <li>G20 India:Recap</li>
-                            <li>G20 Secretariat</li>
+                            <li>Collaborations</li>
+                            <li>Management</li>
+                            <li>Community</li>
                         </ul>
                     </div>
                     <div className={styles.footer_col_3}>
-                        <h3>Workstreams</h3>
+                        <h3>Support</h3>
                         <ul>
-                            <li>Sherpa Track</li>
-                            <li>Finance Track</li>
-                            <li>Engagement Groups</li>
+                            <li>Forms</li>
+                            <li>E-commerce platforms</li>
+                            <li>Help Desk</li>
                         </ul>
                     </div>
                 </div>
