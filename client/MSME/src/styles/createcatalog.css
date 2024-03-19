@@ -1,0 +1,31 @@
+.create_catalog {
+    margin: 0 0 0 25px;
+    height: 50vh;
+    width: 100%;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.button {
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.create_catalog .button h1 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.714em;
+    display: inline-block;
+    background: linear-gradient(
+        92.61deg,
+        #9ac461 0%,
+        #548bc5 0%,
+        #59b59a 116.86%,
+        #b45d97 182.36%,
+        #dc763b 246.57%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

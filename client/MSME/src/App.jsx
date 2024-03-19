@@ -6,6 +6,7 @@ import MainLayout from "./Layout/mainLayout";
 import Signup from "./components/signup";
 import ProductData from "./pages/(logged-in)/catalogue";
 import Homepage from "./pages/homepage";
+import CreateCatalog from "./components/createcatalog";
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
                     <Route element={<Signup />} path="signup" />
                     <Route element={<Homepage />} path="homepage" />
                     <Route element={<ProductData />} path="catalogue" />
+                    <Route element={<CreateCatalog />} path="createcatalog" />
                 </Route>
             </Routes>
         </BrowserRouter>

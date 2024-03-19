@@ -2,7 +2,7 @@
     padding: 5vw 10vw;
 }
 
-.homepage h1 {
+.homepage .main {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-size: 1.714em;
@@ -18,8 +18,29 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    padding-bottom: 25px;
+}
+
+.homepage input.search {
+    width: 100%;
+    border: 1px solid black;
+    border-style: none none solid none;
+    outline: none;
+    padding: 6px;
+    margin-right: 25px;
 }
 
 .section-2 {
     display: flex;
+    padding: 50px 0 0 0;
+}
+
+.section-2 h2 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.314em;
+}
+
+.section-2 select {
+    width: 100%;
 }

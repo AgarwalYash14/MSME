@@ -1,13 +1,39 @@
+import CatalogItems from "../components/catalogitems";
+import CreateCatalog from "../components/createcatalog";
+import React, { useState } from "react";
 import "../styles/homepage.css";
 
 export default function Homepage() {
+    const [displayCatalogItems, setdisplayCatalogItems] = useState(true);
+
+    const toggleComponent = () => {
+        setdisplayCatalogItems((prevState) => !prevState);
+    };
     return (
         <>
             <div className="homepage">
-                <h1>Collaborative Catalogue Management Platform</h1>
-                <div>
-                    <input type="search" name="" id="" />
-                    <button>Create new Catalog</button>
+                <h1 className="main">
+                    Collaborative Catalogue Management Platform
+                </h1>
+                <div style={{ display: "flex" }}>
+                    <input
+                        className="search"
+                        type="search"
+                        name=""
+                        id=""
+                        placeholder="Find your products"
+                    />
+                    <button
+                        style={{
+                            padding: "15px",
+                            width: "200px",
+                            borderRadius: "10px",
+                            border: "1px solid",
+                        }}
+                        onClick={toggleComponent}
+                    >
+                        Create new Catalog
+                    </button>
                 </div>
                 <div className="section-2">
                     <div>
@@ -19,7 +45,7 @@ export default function Homepage() {
                             <option value=""></option>
                         </select>
                     </div>
-                    <div></div>
+                    {displayCatalogItems ? <CatalogItems /> : <CreateCatalog />}
                 </div>
             </div>
         </>
