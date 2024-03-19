@@ -1,8 +1,14 @@
+import React, { useState } from "react";
 import styles from "../styles/navbar.module.css";
 import { emblem, g20, swachh, azadi } from "../assets/";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const handleLoginClick = () => {
+        setIsLoggedIn(true);
+        navigate("/login");
+    };
     const navigate = useNavigate();
 
     return (
@@ -50,15 +56,14 @@ export default function Navbar() {
                         <h3>Micro, small & Medium Enterprises</h3>
                     </div>
                 </div>
-
-                <button
-                    className={styles.login_btn}
-                    onClick={() => {
-                        navigate("/login");
-                    }}
-                >
-                    Login
-                </button>
+                {!isLoggedIn && (
+                    <button
+                        className={styles.login_btn}
+                        onClick={handleLoginClick}
+                    >
+                        Login
+                    </button>
+                )}
             </div>
             <div className={styles.flag_border}></div>
         </>
