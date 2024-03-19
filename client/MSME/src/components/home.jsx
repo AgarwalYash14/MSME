@@ -15,7 +15,7 @@ export default function Home() {
         <>
             <div className={styles.homepage}>
                 <div className={styles.about_section}>
-                    <h1>About MSME</h1>
+                    <h1>About CCMP</h1>
                     <h2>The Collaborative Catalog Management Platform (CCMP) is a web-based application designed to streamline the cataloging processes for MSMEs and small manufacturers while fostering collaboration within the community. It allows users to manage their product catalogs efficiently while also enabling collaboration with other businesses in the same industry.</h2>
                 </div>
                 <div className={styles.key_features}>
