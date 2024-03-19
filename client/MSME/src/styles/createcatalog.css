@@ -1,9 +1,15 @@
+.catalog_upload{
+    display: flex;
+}
+.margin-right{
+    margin-right: 100px;
+}
 .create_catalog {
+    display: flex;
     margin: 0 0 0 25px;
-    /* height: 50vh; */
-    width: 100%;
     border: 1px solid gray;
     cursor: pointer;
+    width: 100%;
 }
 
 .button {

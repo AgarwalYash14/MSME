@@ -43,127 +43,196 @@ export default function CreateCatalog() {
                 </div>
             )}
             {showAddProducts && (
-                <div id="addProducts">
-                    <div className={styles.container}>
-                        <div className={styles.formContainer}>
-                            <div className="text-center">
-                                <h2 className={styles.title}>Add Product</h2>
+                // <div id="addProducts">
+                //     <div className={styles.container}>
+                //         <div className={styles.formContainer}>
+                //             <div className="text-center">
+                //                 <h2 className={styles.title}>Add Product</h2>
+                //             </div>
+                //             <form
+                //                 className={styles.form}
+                //                 onSubmit={handleSubmit}
+                //             >
+                //                 <div className="catalog_upload">
+                //                     <div>
+                //                         <label className={styles.inputLabel}>
+                //                             Product Image
+                //                         </label>
+                //                         <div className="flex items-center justify-center margin-right">
+                //                             <label
+                //                                 className={styles.uploadLabel}
+                //                             >
+                //                                 <div className="h-full w-full text-center flex flex-col items-center justify-center">
+                //                                     <div className="flex flex-auto max-h-48 w-2/5 mx-auto -mt-10">
+                //                                         {productImage ? (
+                //                                             <img
+                //                                                 className={
+                //                                                     styles.uploadImage
+                //                                                 }
+                //                                                 src={URL.createObjectURL(
+                //                                                     productImage
+                //                                                 )}
+                //                                                 alt="Uploaded product"
+                //                                             />
+                //                                         ) : (
+                //                                             <img
+                //                                                 className={
+                //                                                     styles.uploadImage
+                //                                                 }
+                //                                                 src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg"
+                //                                                 alt="Upload product"
+                //                                             />
+                //                                         )}
+                //                                     </div>
+                //                                     <input
+                //                                         type="file"
+                //                                         className={
+                //                                             styles.fileInput
+                //                                         }
+                //                                         onChange={
+                //                                             handleImageChange
+                //                                         }
+                //                                     />
+                //                                 </div>
+                //                             </label>
+                //                         </div>
+                //                     </div>
+                //                     <div>
+                //                         <div className="grid grid-cols-1 space-y-2">
+                //                             <label
+                //                                 className={styles.inputLabel}
+                //                             >
+                //                                 Product Name
+                //                             </label>
+                //                             <input
+                //                                 className={styles.inputField}
+                //                                 type="text"
+                //                                 value={productName}
+                //                                 onChange={(e) =>
+                //                                     setProductName(
+                //                                         e.target.value
+                //                                     )
+                //                                 }
+                //                                 placeholder="Enter product name..."
+                //                             />
+                //                         </div>
+                //                         <div className="grid grid-cols-1 space-y-2">
+                //                             <label
+                //                                 className={styles.inputLabel}
+                //                             >
+                //                                 Product Description
+                //                             </label>
+                //                             <textarea
+                //                                 className={styles.inputField}
+                //                                 value={productDescription}
+                //                                 onChange={(e) =>
+                //                                     setProductDescription(
+                //                                         e.target.value
+                //                                     )
+                //                                 }
+                //                                 placeholder="Enter product description..."
+                //                             ></textarea>
+                //                         </div>
+                //                         <div className="grid grid-cols-1 space-y-2">
+                //                             <label
+                //                                 className={styles.inputLabel}
+                //                             >
+                //                                 Product Price
+                //                             </label>
+                //                             <input
+                //                                 className={styles.inputField}
+                //                                 type="text"
+                //                                 value={productPrice}
+                //                                 onChange={(e) =>
+                //                                     setProductPrice(
+                //                                         e.target.value
+                //                                     )
+                //                                 }
+                //                                 placeholder="Enter product price..."
+                //                             />
+                //                         </div>
+                //                     </div>
+                //                 </div>
+                //                 <div className="text-center">
+                //                     <button
+                //                         type="submit"
+                //                         className={styles.uploadButton}
+                //                     >
+                //                         Add Product
+                //                     </button>
+                //                 </div>
+                //             </form>
+                //         </div>
+                //     </div>
+                // </div>
+                <div className={styles.form}>
+                    <h1>Add Product</h1>
+                    <div className={styles.catalog_form}>
+                        <div className={styles.catalog_upload}>
+                            <h2>Product Image</h2>
+                            <div className={styles.upload_img}>
+                                {productImage ? (
+                                    <img
+                                        className={styles.uploadImage}
+                                        src={URL.createObjectURL(productImage)}
+                                        alt="Uploaded product"
+                                    />
+                                ) : (
+                                    <img
+                                        className={styles.uploadImage}
+                                        src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg"
+                                        alt="Upload product"
+                                    />
+                                )}
+                                <input
+                                    type="file"
+                                    className={styles.fileInput}
+                                    onChange={handleImageChange}
+                                />
                             </div>
-                            <form
-                                className={styles.form}
-                                onSubmit={handleSubmit}
-                            >
-                                <div className="grid grid-cols-2 gap-4">
-                                    <div>
-                                        <label className={styles.inputLabel}>
-                                            Product Image
-                                        </label>
-                                        <div className="flex items-center justify-center">
-                                            <label
-                                                className={styles.uploadLabel}
-                                            >
-                                                <div className="h-full w-full text-center flex flex-col items-center justify-center">
-                                                    <div className="flex flex-auto max-h-48 w-2/5 mx-auto -mt-10">
-                                                        {productImage ? (
-                                                            <img
-                                                                className={
-                                                                    styles.uploadImage
-                                                                }
-                                                                src={URL.createObjectURL(
-                                                                    productImage
-                                                                )}
-                                                                alt="Uploaded product"
-                                                            />
-                                                        ) : (
-                                                            <img
-                                                                className={
-                                                                    styles.uploadImage
-                                                                }
-                                                                src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg"
-                                                                alt="Upload product"
-                                                            />
-                                                        )}
-                                                    </div>
-                                                    <input
-                                                        type="file"
-                                                        className={
-                                                            styles.fileInput
-                                                        }
-                                                        onChange={
-                                                            handleImageChange
-                                                        }
-                                                    />
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className="grid grid-cols-1 space-y-2">
-                                            <label
-                                                className={styles.inputLabel}
-                                            >
-                                                Product Name
-                                            </label>
-                                            <input
-                                                className={styles.inputField}
-                                                type="text"
-                                                value={productName}
-                                                onChange={(e) =>
-                                                    setProductName(
-                                                        e.target.value
-                                                    )
-                                                }
-                                                placeholder="Enter product name..."
-                                            />
-                                        </div>
-                                        <div className="grid grid-cols-1 space-y-2">
-                                            <label
-                                                className={styles.inputLabel}
-                                            >
-                                                Product Description
-                                            </label>
-                                            <textarea
-                                                className={styles.inputField}
-                                                value={productDescription}
-                                                onChange={(e) =>
-                                                    setProductDescription(
-                                                        e.target.value
-                                                    )
-                                                }
-                                                placeholder="Enter product description..."
-                                            ></textarea>
-                                        </div>
-                                        <div className="grid grid-cols-1 space-y-2">
-                                            <label
-                                                className={styles.inputLabel}
-                                            >
-                                                Product Price
-                                            </label>
-                                            <input
-                                                className={styles.inputField}
-                                                type="text"
-                                                value={productPrice}
-                                                onChange={(e) =>
-                                                    setProductPrice(
-                                                        e.target.value
-                                                    )
-                                                }
-                                                placeholder="Enter product price..."
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="text-center">
-                                    <button
-                                        type="submit"
-                                        className={styles.uploadButton}
-                                        onClick={handleClick}
-                                    >
-                                        Add Product
-                                    </button>
-                                </div>
-                            </form>
                         </div>
+                        <div className={styles.input_labels}>
+                            <div className={styles.input_label_1}>
+                                <h1>Product Name</h1>
+                                <input
+                                    className={styles.inputField}
+                                    type="text"
+                                    value={productName}
+                                    onChange={(e) =>
+                                        setProductName(e.target.value)
+                                    }
+                                    placeholder="Enter product name..."
+                                />
+                            </div>
+                            <div className={styles.input_label_2}>
+                                <h1>Product Description</h1>
+                                <textarea
+                                    className={styles.inputField}
+                                    value={productDescription}
+                                    onChange={(e) =>
+                                        setProductDescription(e.target.value)
+                                    }
+                                    placeholder="Enter product description..."
+                                ></textarea>
+                            </div>
+                            <div className={styles.input_label_3}>
+                                <h1>Product Price</h1>
+                                <input
+                                    className={styles.inputField}
+                                    type="text"
+                                    value={productPrice}
+                                    onChange={(e) =>
+                                        setProductPrice(e.target.value)
+                                    }
+                                    placeholder="Enter product price..."
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.catalog_upload_button}>
+                        <button type="submit" className={styles.uploadButton}>
+                            Add Product
+                        </button>
                     </div>
                 </div>
             )}
