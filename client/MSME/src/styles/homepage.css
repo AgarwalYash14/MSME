@@ -1,8 +1,25 @@
 .homepage {
-    padding: 50px;
+    padding: 5vw 10vw;
 }
 
 .homepage h1 {
     text-transform: uppercase;
-    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.714em;
+    display: inline-block;
+    background: linear-gradient(
+        92.61deg,
+        #9ac461 0%,
+        #548bc5 0%,
+        #59b59a 116.86%,
+        #b45d97 182.36%,
+        #dc763b 246.57%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-2 {
+    display: flex;
 }
