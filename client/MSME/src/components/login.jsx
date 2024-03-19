@@ -1,16 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/login.css";
 import { useNavigate } from "react-router-dom";
-import ProductData from "../pages/(logged-in)/catalogue";
+import { auth } from "../config/firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 export default function Login() {
+    // const [login, setLogin] = useState(false);
+
+    const history = useNavigate();
+
+    const handleSubmit = (e, type) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // User sign-in successful, navigate to "/homepage"
+                navigate("/homepage");
+            })
+            .catch((error) => {
+                // Handle any errors during sign-in
+                console.error("Error signing in:", error);
+                alert(error.code); // Display error code in an alert
+            });
+    };
+
     const navigate = useNavigate();
 
     return (
         <div className="login-container">
             <div className="session">
                 <div className="left"></div>
-                <form action className="log-in" autoComplete="off">
+                <form
+                    action
+                    className="log-in"
+                    autoComplete="off"
+                    onSubmit={(e) => handleSubmit(e)}
+                >
                     <h4>
                         LOGIN TO YOUR <span>ACCOUNT</span>
                     </h4>
@@ -21,6 +48,7 @@ export default function Login() {
                             name="email"
                             id="email"
                             autoComplete="off"
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                         <label htmlFor="email">Email:</label>
                         <div className="icon">
@@ -56,6 +84,7 @@ export default function Login() {
                             name="password"
                             id="password"
                             autoComplete="off"
+                            onChange={(e) => setPassword(e.target.value)}
                         />
                         <label htmlFor="password">Password:</label>
                         <div className="icon">
@@ -88,9 +117,7 @@ export default function Login() {
                             </svg>
                         </div>
                     </div>
-                    <button type="submit" onclick="return false;">
-                        Login
-                    </button>
+                    <button>Login</button>
                     <div
                         className="new-account"
                         onClick={() => {

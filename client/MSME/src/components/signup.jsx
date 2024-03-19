@@ -1,13 +1,35 @@
 import "../styles/login.css";
 import { useNavigate } from "react-router-dom";
+import { auth } from "../config/firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 export default function Signup() {
+    const history = useNavigate();
+
+    const handleSignUp = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        createUserWithEmailAndPassword(auth, email, password).then(
+            (userCredential) => {
+                const user = userCredential.user;
+                history("/login");
+            }
+        );
+    };
+
     const navigate = useNavigate();
     return (
         <div className="login-container">
             <div className="session">
                 <div className="left"></div>
-                <form action className="log-in" autoComplete="off">
+                <form
+                    action
+                    className="log-in"
+                    autoComplete="off"
+                    onSubmit={(e) => handleSignUp(e)}
+                >
                     <h4>
                         CREATE YOUR
                         <br />
@@ -132,7 +154,7 @@ export default function Signup() {
                             </svg>
                         </div>
                     </div>
-                    <button type="submit" onclick="return false;">
+                    <button type="submit" onClick="return false;">
                         Create your Account
                     </button>
                     <div

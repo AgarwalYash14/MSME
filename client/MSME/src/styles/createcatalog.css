@@ -1,6 +1,6 @@
 .create_catalog {
     margin: 0 0 0 25px;
-    height: 50vh;
+    /* height: 50vh; */
     width: 100%;
     border: 1px solid gray;
     cursor: pointer;
