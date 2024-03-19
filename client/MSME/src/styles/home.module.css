@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap");
+
 .key_features {
     background: url(https://www.mygov.in/sites/all/themes/mygov/images/paralex-bg.png)
         right 0 no-repeat;
@@ -33,7 +37,7 @@
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
 }
-.tab_icons{
+.tab_icons {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -47,7 +51,7 @@
     width: 18%;
     background: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 .tab_link img {
     width: 50px;
@@ -55,10 +59,55 @@
     padding: 25px 0;
 }
 
-.tab_link h1{
+.tab_link h1 {
     padding: 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 0.786em;
     color: #6c6c6c;
     letter-spacing: 1px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.b1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.b1 h3 {
+    font-family: "Roboto Slab";
+    font-size: 15px;
+    text-align: center;
+    margin-top: 7%;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 7px;
+    margin: 12px 0 7px;
+}
+
+.b1 p {
+    font-family: "Open Sans";
+    color: #727171;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.benefits hr {
+    width: 100%;
+    margin: 7px;
+}
+
+.benefits img {
+    width: 50%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
