@@ -7,6 +7,7 @@ import Signup from "./components/signup";
 import ProductData from "./pages/(logged-in)/catalogue";
 import Homepage from "./pages/homepage";
 import CreateCatalog from "./components/createcatalog";
+import UploadExcelToFirebase from "./components/bulk";
 
 export default function App() {
     return (
@@ -19,6 +20,7 @@ export default function App() {
                     <Route element={<Homepage />} path="homepage" />
                     <Route element={<ProductData />} path="catalogue" />
                     <Route element={<CreateCatalog />} path="createcatalog" />
+                    <Route element={<UploadExcelToFirebase />} path="bulk" />
                 </Route>
             </Routes>
         </BrowserRouter>

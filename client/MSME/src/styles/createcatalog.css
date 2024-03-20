@@ -1,12 +1,12 @@
-.catalog_upload{
+.catalog_upload {
     display: flex;
 }
-.margin-right{
+.margin-right {
     margin-right: 100px;
 }
 .create_catalog {
     display: flex;
-    margin: 0 0 0 25px;
+    /* margin: 0 0 0 25px; */
     border: 1px solid gray;
     cursor: pointer;
     width: 100%;
@@ -19,7 +19,7 @@
     height: 100%;
 }
 
-.create_catalog .button h1 {
+.button h1 {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-size: 1.714em;

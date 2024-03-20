@@ -16,7 +16,10 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
     "stable": "^0.1.8",
-    "tailwind": "^4.0.0"
+    "tailwind": "^4.0.0",
+    "uuid": "^9.0.1",
+    "uuidv4": "^6.2.13",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",

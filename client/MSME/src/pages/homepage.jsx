@@ -1,14 +1,22 @@
 import CatalogItems from "../components/catalogitems";
 import CreateCatalog from "../components/createcatalog";
+import BulkUploadComponent from "../components/bulk";
 import React, { useState } from "react";
 import "../styles/homepage.css";
 
 export default function Homepage() {
-    const [displayCatalogItems, setdisplayCatalogItems] = useState(true);
+    const [displayCatalogItems, setDisplayCatalogItems] = useState(true);
+    const [displayBulkUploadComponent, setDisplayBulkUploadComponent] =
+        useState(false);
 
     const toggleComponent = () => {
-        setdisplayCatalogItems((prevState) => !prevState);
+        setDisplayCatalogItems((prevState) => !prevState);
     };
+
+    const toggleComponent_2 = () => {
+        setDisplayBulkUploadComponent((prevState) => !prevState);
+    };
+
     return (
         <>
             <div className="homepage">
@@ -25,8 +33,11 @@ export default function Homepage() {
                     />
                     <button
                         style={{
+                            background: "#f78b15",
+                            fontFamily: "Montserrat",
+                            color: "#fff",
                             padding: "15px",
-                            width: "200px",
+                            width: "230px",
                             borderRadius: "10px",
                             border: "1px solid",
                         }}
@@ -34,18 +45,30 @@ export default function Homepage() {
                     >
                         Create new Catalog
                     </button>
+                    <button
+                        style={{
+                            background: "#f78b15",
+                            fontFamily: "Montserrat",
+                            color: "#fff",
+                            padding: "15px",
+                            marginLeft: "10px",
+                            width: "200px",
+                            borderRadius: "10px",
+                            border: "1px solid",
+                        }}
+                        onClick={toggleComponent_2}
+                    >
+                        Bulk Upload
+                    </button>
                 </div>
                 <div className="section-2">
-                    <div>
-                        <h2>Product Categories:</h2>
-                        <select name="" id="">
-                            <option value="HandcraftedProducts">
-                                Handcrafted Products
-                            </option>
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    {displayCatalogItems ? <CatalogItems /> : <CreateCatalog />}
+                    {displayCatalogItems && !displayBulkUploadComponent && (
+                        <CatalogItems />
+                    )}
+                    {!displayCatalogItems && !displayBulkUploadComponent && (
+                        <CreateCatalog />
+                    )}
+                    {displayBulkUploadComponent && <BulkUploadComponent />}
                 </div>
             </div>
         </>
