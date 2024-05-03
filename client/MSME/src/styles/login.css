@@ -1,0 +1,244 @@
+button {
+    cursor: pointer;
+}
+
+.login-container * {
+    font-weight: 300;
+    margin: 0;
+}
+
+.login-container {
+    background: url(https://www.g20.in/en/calendar/calender-bg.png) left top
+            no-repeat,
+        url(https://www.g20.in/en/calendar/calender-bg2.png) right bottom
+            no-repeat;
+    height: 90vh;
+    display: flex;
+}
+
+.login-container .name-svg svg {
+    height: 25px;
+    width: 25px;
+}
+
+.login-container h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    opacity: 0.85;
+}
+.login-container label {
+    font-size: 12.5px;
+    color: #000;
+    opacity: 0.8;
+    font-weight: 400;
+}
+.login-container form {
+    padding: 67px 78px;
+    background: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    border-radius: 15px;
+}
+.login-container form h4 {
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.login-container form h4 span {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+}
+.login-container form p {
+    line-height: 155%;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+    opacity: 0.65;
+    font-weight: 400;
+    max-width: 200px;
+    margin-bottom: 40px;
+}
+.login-container a.discrete {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0);
+    padding-bottom: 4px;
+    margin-left: auto;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+.login-container a.discrete:hover {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+.login-container button {
+    /* -webkit-appearance: none; */
+    width: auto;
+    min-width: 100px;
+    border-radius: 24px;
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 50px;
+    background-color: #f78b15;
+    color: #fff;
+    font-size: 14px;
+    margin-left: auto;
+    font-weight: 500;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.13);
+    border: none;
+    transition: all 0.3s ease;
+    outline: 0;
+}
+.login-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 6px -1px rgba(182, 157, 230, 0.65);
+}
+.login-container button:hover:active {
+    transform: scale(0.99);
+}
+.login-container input {
+    font-size: 16px;
+    padding: 20px 0px;
+    height: 56px;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    width: 280px;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    color: #000;
+    font-weight: 400;
+    /* -webkit-appearance: none; */
+}
+.login-container input:focus {
+    border-bottom: solid 1px #b69de6;
+    outline: 0;
+    box-shadow: 0 2px 6px -8px rgba(182, 157, 230, 0.45);
+}
+.login-container .floating-label {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.login-container .floating-label label {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    padding-left: 44px;
+}
+.login-container .floating-label input {
+    width: calc(100% - 44px);
+    margin-left: auto;
+    display: flex;
+}
+.login-container .floating-label .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 56px;
+    width: 44px;
+    display: flex;
+}
+
+.login-container .floating-label .name-svg {
+    height: 23px !important ;
+    width: 23px !important;
+}
+.login-container .floating-label .icon svg {
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    opacity: 0.15;
+    transition: all 0.3s ease;
+}
+.login-container .floating-label .icon svg path {
+    transition: all 0.3s ease;
+}
+.login-container .floating-label input:not(:placeholder-shown) {
+    padding: 28px 0px 12px 0px;
+}
+.login-container .floating-label input:not(:placeholder-shown) + label {
+    transform: translateY(-10px);
+    opacity: 0.7;
+}
+.login-container
+    .floating-label
+    input:valid:not(:placeholder-shown)
+    + label
+    + .icon
+    svg {
+    opacity: 1;
+}
+.login-container
+    .floating-label
+    input:valid:not(:placeholder-shown)
+    + label
+    + .icon
+    svg
+    path {
+    fill: #f78b15;
+}
+.login-container .floating-label input:not(:valid):not(:focus) + label + .icon {
+    animation-name: shake-shake;
+    animation-duration: 0.3s;
+}
+@keyframes shake-shake {
+    0% {
+        transform: translateX(-3px);
+    }
+    20% {
+        transform: translateX(3px);
+    }
+    40% {
+        transform: translateX(-3px);
+    }
+    60% {
+        transform: translateX(3px);
+    }
+    80% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.login-container .session {
+    display: flex;
+    flex-direction: row;
+    width: 793px;
+    height: auto;
+    margin: auto auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.12);
+}
+.login-container .left {
+    width: 350px;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+    /* background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background-image: url("../assets/img.png");
+    background-size: cover;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-radius: 15px;
+}
+
+.new-account {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.new-account h5 {
+    font-size: 16px;
+    color: #f78b15 !important;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
