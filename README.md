@@ -40,7 +40,7 @@ Fork the repository on GitHub by clicking the "Fork" button on the top right of 
 ### 2. Clone the Forked Repository
 Clone your forked repository to your local machine using the following command:
 ```sh
-git clone https://github.com/Codeshinigami/legalfirm.git
+git clone https://github.com/GitHub-YashAgarwal/MSME.git
 ```
 
 ### 3. Installing Client Dependencies
