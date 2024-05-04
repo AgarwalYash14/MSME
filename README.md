@@ -1,5 +1,3 @@
-<div align="justify">
-
 ![Smart Cataloguing Hackathon with ShopClues.com](https://i.postimg.cc/ryrJB4y2/Whats-App-Image-2024-03-15-at-17-30-22-5fb0c813.jpg)
  
 # SMART CATALOGUING HACKATHON with SHOPCLUES.com
@@ -11,6 +9,7 @@
 
 # Catalog Management Platform (CCMP)
 
+<div align="justify">
 We developed a **Catalog Management Platform (CCMP)** to revolutionize cataloging processes for **Micro, Small, and Medium Enterprises (MSMEs) and small manufacturers**. CCMP is an innovative web-based application designed to simplify catalog management while fostering collaboration within the industry community.
 
 In the **Collaborative Catalog Management Platform (CCMP)** project, several functionalities were implemented to create a comprehensive solution for MSMEs and small manufacturers. 
