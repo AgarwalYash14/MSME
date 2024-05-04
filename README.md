@@ -10,22 +10,22 @@
 # Catalog Management Platform (CCMP)
 
 <div align="justify">
-We developed a **Catalog Management Platform (CCMP)** to revolutionize cataloging processes for **Micro, Small, and Medium Enterprises (MSMEs) and small manufacturers**. CCMP is an innovative web-based application designed to simplify catalog management while fostering collaboration within the industry community.
+We developed a <b>Catalog Management Platform (CCMP)</b> to revolutionize cataloging processes for <b>Micro, Small, and Medium Enterprises (MSMEs) and small manufacturers</b>. CCMP is an innovative web-based application designed to simplify catalog management while fostering collaboration within the industry community.
 
-In the **Collaborative Catalog Management Platform (CCMP)** project, several functionalities were implemented to create a comprehensive solution for MSMEs and small manufacturers. 
+In the <b>Collaborative Catalog Management Platform (CCMP)</b> project, several functionalities were implemented to create a comprehensive solution for MSMEs and small manufacturers. 
 <br><br>
 
 ## Key Features
 
-1. **Centralized Catalog Management:** Seamlessly upload, organize, and manage product catalogs with support for bulk product uploads, ensuring consistency across listings.
+1. <b>Centralized Catalog Management:</b> Seamlessly upload, organize, and manage product catalogs with support for bulk product uploads, ensuring consistency across listings.
 
-2. **Version Control and History:** Maintain a transparent history of catalog changes, facilitating accountability and enabling users to track modifications over time.
+2. <b>Version Control and History:</b> Maintain a transparent history of catalog changes, facilitating accountability and enabling users to track modifications over time.
 
 ## Benefits
 
-1. **Efficiency:** Simplify cataloging processes, saving time and resources for MSMEs and small manufacturers.
+1. <b>Efficiency:</b> Simplify cataloging processes, saving time and resources for MSMEs and small manufacturers.
 
-2. **Quality Assurance:** Ensure accurate and high-quality product information, enhancing trust and credibility among customers.
+2. <b>Quality Assurance:</b> Ensure accurate and high-quality product information, enhancing trust and credibility among customers.
 
 <br>
  
